@@ -1,0 +1,34 @@
+<!--<script src="home.js"></script>-->
+<div id="homehead">
+  <h1>
+    <span id="date">{{ today | date }}</span>
+  </h1>
+  <h2>
+    <span id="time">{{ today | date: 'shortTime' }}</span>
+  </h2>
+</div>
+<div id="toexpire">
+  <h1>To Expire:</h1>
+  <ul>
+    <li>
+      <img src="" alt="photoid" /><span class="name"
+        >Edith Summers</span
+      ><span class="past" >{{ edith | date:"shortDate" }}</span>
+    </li>
+    <li>
+      <img src="https://ibb.co/b2GcZ1x" alt="photoid" /><span class="name"
+        >Stephan Willis</span
+      ><span class="now">{{ today | date:"shortDate" }}</span>
+    </li>
+    <li>
+      <img src="https://ibb.co/b2GcZ1x" alt="photoid" /><span class="name"
+        >Jennifer Kelly</span
+      ><span class="inweek">{{ jennifer | date:"shortDate" }}</span>
+    </li>
+    <li>
+      <img src="https://ibb.co/b2GcZ1x" alt="photoid" /><span class="name"
+        >Timmy Richards</span
+      ><span class="inweek">{{ timmy | date:"shortDate" }}</span>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,48 @@
+<h3>First Name</h3>
+
+<mat-form-field appearance="fill">
+  <mat-label>Enter some input</mat-label>
+  <input matInput #input maxlength="30" placeholder="Ex. Nougat" />
+  <mat-hint align="end">{{ input.value?.length || 0 }}/30</mat-hint>
+</mat-form-field>
+
+<h3>Last Name</h3>
+<mat-form-field appearance="fill">
+  <mat-label>Enter some input</mat-label>
+  <input matInput #input maxlength="30" placeholder="Ex. Nougat" />
+  <mat-hint align="end">{{ input.value?.length || 0 }}/30</mat-hint>
+</mat-form-field>
+
+<mat-form-field appearance="fill" id="dep">
+  <mat-label>Department</mat-label>
+  <mat-select>
+    <mat-option value="option">Human resources</mat-option>
+    <mat-option value="option">Accounts</mat-option>
+    <mat-option value="option">Local Deliveries</mat-option>
+    <mat-option value="option">Interstate Deiveries</mat-option>
+    <mat-option value="option">Sales</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field appearance="fill" id="dep">
+  <mat-label>Number of cards</mat-label>
+  <mat-select id="test_select">
+    <mat-option value="option">1</mat-option>
+    <mat-option value="option">2</mat-option>
+    <mat-option value="option">3</mat-option>
+    <mat-option value="option">4</mat-option>
+    <mat-option value="option">5</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<section class="example-section">
+  <mat-checkbox class="example-margin">Car</mat-checkbox>
+  <mat-checkbox class="example-margin">Rider</mat-checkbox>
+  <mat-checkbox class="example-margin">Restricted rider</mat-checkbox>
+  <mat-checkbox class="example-margin">Light rigid</mat-checkbox>
+  <mat-checkbox class="example-margin">Medium rigid</mat-checkbox>
+  <mat-checkbox class="example-margin">Heavy rigid</mat-checkbox>
+  <mat-checkbox class="example-margin">Multi combination</mat-checkbox>
+  <mat-checkbox class="example-margin">Heavy combination</mat-checkbox>
+</section>
+

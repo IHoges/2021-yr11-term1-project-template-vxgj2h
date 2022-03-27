@@ -1,0 +1,44 @@
+.fill-remaining-space {
+  /* This fills the remaining space, by using flexbox. 
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+.topBar {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 6px;
+}
+
+.footer {
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+}
+
+/*  SIDE MENU  */
+mat-sidenav-container {
+  padding: 0px;
+}
+
+.mat-sidenav-content {
+  padding-top: 100px;
+  padding-left: 20px;
+  height: 100vh;
+}
+.mat-sidenav {
+  background-color: rgb(3, 2, 22);
+  padding-top:20px;
+}
+.mat-list-item {
+  color: white;
+}
+.mat-toolbar{
+  height:80px;
+}

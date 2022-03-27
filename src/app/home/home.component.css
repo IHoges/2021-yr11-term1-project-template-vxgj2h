@@ -1,0 +1,52 @@
+.box {
+  padding: 10px;
+  border-style: solid;
+  border-color: gold;
+  margin: 2px;
+  width: 90%;
+}
+a:link {
+  color: coral;
+}
+
+/* visited link */
+a:visited {
+  color: red;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+}
+#date {
+  font-size: 55px;
+  font-weight: bold;
+}
+#homehead {
+  border-bottom: 1px solid black;
+  margin: 20px;
+  text-align: center;
+}
+li {
+  list-style: none;
+  font-size: 20px;
+  margin: 5px, -30px 5px 0px;
+}
+li.alt {
+  display: none;
+  font-size: 0px;
+}
+.name {
+  margin: 5px 10px;
+  display: inline block;
+}
+.past {
+  color: 'warn';
+  font-weight: bold;
+}
+.now {
+  font-weight: bold;
+}
+.inweek {
+  font-weight: bold;
+}

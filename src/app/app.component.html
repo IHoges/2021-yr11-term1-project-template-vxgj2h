@@ -1,0 +1,71 @@
+<section>
+  <mat-sidenav-container hasBackdrop="true">
+    <mat-sidenav #snav mode="'over'" [fixedInViewport]="true">
+      <!--MENU ITEMS =====================1=============  -->
+      <mat-nav-list>
+        <mat-list-item></mat-list-item>
+        <!--idk why its doing that tbh-->
+        <mat-list-item routerLink="/home" (click)="close()">
+          <!--<mat-icon matListIcon>home</mat-icon>-->
+          Home
+        </mat-list-item>
+        <mat-list-item routerLink="/add" (click)="close()">
+          <!--<mat-icon matListIcon>home</mat-icon>-->
+          Add
+        </mat-list-item>
+
+        <mat-list-item routerLink="/list" (click)="close()">
+          <!--<mat-icon matListIcon>home</mat-icon>-->
+          List
+        </mat-list-item>
+
+        <mat-list-item (click)="snav.close()">
+          <mat-icon matListIcon>cancel</mat-icon>
+          Close
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <!-- ROUTER -->
+      <router-outlet></router-outlet>
+      <!-- end router -->
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  <!----------TOP NAV BAR----------->
+  <mat-toolbar color="primary" class="topBar">
+    <div fxHide.gt-xs>
+      <button mat-icon-button (click)="snav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <div fxFlex></div>
+    <div fxFlex>Driver's expiries</div>
+    <div fxFlex></div>
+    <div fxHide.xs>
+      <!--menu component-->
+    </div>
+  </mat-toolbar>
+  <!-- end top nav bar-->
+
+  <!---------FOOTER------------->
+  <!--<mat-toolbar  color="primary" class="footer" >
+	<div fxFlex> </div>
+	 <button mat-icon-button routerLink="reports">
+		 <mat-icon>articles</mat-icon>Home
+	 </button>
+ 
+ <div fxFlex> </div>
+
+	 <button mat-icon-button routerLink="add">
+		 <mat-icon>add_box</mat-icon>add
+	 </button> 
+ 
+ <div fxFlex> </div>
+   
+ </mat-toolbar>-->
+  <!-- end footer-->
+
+  <section></section>
+</section>
